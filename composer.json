@@ -20,6 +20,7 @@
         "guzzlehttp/guzzle": "^6.3",
         "intonate/tinker-zero": "^1.0",
         "laravel-zero/framework": "5.8.*",
+        "symfony/css-selector": "^4.3",
         "symfony/dom-crawler": "^4.3"
     },
     "require-dev": {
