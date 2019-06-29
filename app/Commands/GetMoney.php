@@ -5,6 +5,7 @@ namespace App\Commands;
 use App\Entities\Payment;
 use App\Zaim;
 use App\Zaim\Parsers\UsersAuthParser;
+use Carbon\Carbon;
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
 
@@ -36,11 +37,28 @@ class GetMoney extends Command
 
         $zaim->login($email, $password);
 
-        $payments = $zaim->getPayments();
+        $payments = $zaim->getPayments(
+            $this->getMonth(Carbon::today())
+        );
 
         $table = $this->format($payments);
 
         $this->table(...$table);
+    }
+
+    /**
+     * Get the month from option or default.
+     *
+     * @param  \Carbon\Carbon  $default
+     * @return \Carbon\Carbon
+     */
+    private function getMonth(Carbon $default): Carbon
+    {
+        if (is_null($month = $this->option('month'))) {
+            return $default;
+        }
+
+        return Carbon::createFromFormat('Ymd', $month.'01');
     }
 
     /**
