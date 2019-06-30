@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name="apple-itunes-app" content="app-id=445850671">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>ログイン : アカウント情報 | Zaim</title>
+<link href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>
+<link rel='stylesheet' href='/css/ripples.min.css'>
+<link rel='stylesheet' href='/css/material.min.auth.css'>
+<link rel='stylesheet' href='/css/material.min.css'>
+<link rel='stylesheet' href='/css/material-custom.css'>
+<link rel="stylesheet" type="text/css" href="/css/login.css?1560730925"/></head>
+<body>
+	<div class="top-spacer"></div>
+	<div class='navbar navbar-zaim'>
+	<div class='navbar-header'>
+		<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-responsive-collapse'>
+			<span class='icon-bar'></span>
+			<span class='icon-bar'></span>
+			<span class='icon-bar'></span>
+		</button>
+		<a class='navbar-brand' href='https://zaim.net/'>
+			<img alt='Zaim' height='48' src='/img/common/logo-160.png' width='160'>
+			<div class='ripple-wrapper'></div>
+		</a>
+	</div>
+	<div class='navbar-collapse collapse navbar-responsive-collapse'>
+		<ul class='nav navbar-nav navbar-left nav-default'>
+			<li class='btn-input-detail'>
+				<a href="https://zaim.net/money/new"><div><i class="mdi-content-add-circle"></i> 家計簿を入力</div></a>			</li>
+			<li>
+				<a href="https://zaim.net/money"><i class="mdi-av-my-library-books"></i> 履歴</a>			</li>
+			<li>
+				<a href="https://zaim.net/summary"><i class="mdi-editor-insert-chart"></i> 分析</a>			</li>
+						<li class="">
+				<a href="/contents"><i class="mdi-action-announcement"></i> お金の便利帳</a>			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-left nav-small">
+			<li class="detail_menu_li">
+				<a href="https://zaim.net/home"><i class="mdi-action-home"></i> HOME</a>			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+				<div><i class="mdi-content-add-circle"></i> 家計簿を入力 <b class="caret"></b>
+				</div>
+			</a>
+			<ul class="dropdown-menu">
+				<li>
+					<a href="https://zaim.net/money/new?toggle=payment"><i class="mdi-action-account-balance-wallet"></i> 支出</a>				</li>
+				<li>
+					<a href="https://zaim.net/money/new?toggle=income"><i class="mdi-action-wallet-giftcard"></i> 収入</a>				</li>
+				<li>
+					<a href="https://zaim.net/money/new?toggle=income"><i class="mdi-action-autorenew"></i> 振替</a>				</li>
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+			<div><i class="mdi-action-view-list"></i> 振り返り <b class="caret"></b></div>
+			</a>
+			<ul class="dropdown-menu">
+				<li class="dropdown-header">履歴</li>
+				<li>
+					<a href="https://zaim.net/money"><i class="mdi-action-dns"></i> 日ごと</a>				</li>
+				<li>
+					<a href="https://zaim.net/money/weeks"><i class="mdi-action-view-column"></i> 週ごと</a>				</li>
+				<li>
+					<a href="https://zaim.net/money/weeks"><i class="mdi-action-today"></i> 月ごと</a>				</li>
+				<li class="divider"></li>
+				<li class="dropdown-header">分析</li>
+				<li>
+					<a href="https://zaim.net/summary"><i class="mdi-action-event"></i> 月の収支</a>				</li>
+				<li>
+					<a href="https://zaim.net/summary/categories"><i class="mdi-image-grid-on"></i> 期間で比較</a>				</li>
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+			<div><i class="mdi-social-school"></i> お金の便利帳 <b class="caret"></b></div>
+			</a>
+			<ul class="dropdown-menu">
+								<li>
+					<a href="/challenges" target="_blank"><i class="mdi-action-stars"></i> チャレンジ</a>				</li>
+								<li>
+					<a href="/home/budgets/diagnosis"><i class="mdi-action-search"></i> バランス診断</a>				</li>
+				<li>
+					<a href="/loans"><i class="mdi-action-polymer"></i> ローン</a>				</li>
+				<li>
+					<a href="/insurances"><i class="mdi-maps-local-hotel"></i> 保険</a>				</li>
+				<li>
+					<a href="/benefits"><i class="mdi-maps-map"></i> 給付金</a>				</li>
+				<li>
+					<a href="/deductions"><i class="mdi-maps-local-hospital"></i> 医療費控除</a>				</li>
+			</ul>
+			</li>
+		</ul>
+		<ul class='nav navbar-nav navbar-right'>
+			<li>
+				<a href='https://zaim.net/user/edit' class='active'>
+					<img src="https://s3-ap-northeast-1.amazonaws.com/zaim.net/public/images/users/_default/90x90.png" width="20" height="20" alt="プロフィール写真" class="photo-profile"/>				</a>
+			</li>
+			<li class='dropdown'>
+				<a href='javascript:void(0)' class='dropdown-toggle' data-toggle='dropdown'>設定 <b class='caret'></b><div class='ripple-wrapper'></div></a>
+				<ul class='dropdown-menu'>
+					<li class='dropdown-header'>初期設定</li>
+					<li><a href='https://zaim.net/user/edit'><i class='mdi-action-settings'></i> 基本設定</a></li>
+					<li class="easy_menu_li"><a href='https://zaim.net/budgets'><i class='mdi-editor-attach-money'></i> 月の予算</a></li>
+					<li class='divider'></li>
+					
+					<li class='dropdown-header'>カテゴリ設定</li>
+					<li><a href='https://zaim.net/payment/categories'><i class='mdi-content-remove-circle-outline'></i> 支出</a></li>
+					<li><a href='https://zaim.net/income/categories'><i class='mdi-content-add-circle-outline'></i> 収入</a></li>
+					<li><a href='https://zaim.net/accounts'><i class='mdi-action-account-balance-wallet'></i> 口座</a></li>
+					<li><a href='https://zaim.net/places'><i class='mdi-action-shop'></i> お店</a></li>
+					<li class='divider'></li>
+					
+					<li class="detail_menu_li dropdown-header">予算</li>
+					<li class="detail_menu_li">
+						<a href="https://zaim.net/budgets"><i class="mdi-action-settings-input-composite"></i> 表示設定</a>
+					</li>
+					<li class="detail_menu_li">
+						<a href="https://zaim.net/budgets/gross"><i class="mdi-action-shop"></i> 標準の予算</a>
+					</li>
+					<li class="detail_menu_li">
+						<a href="https://zaim.net/budgets/select_month"><i class="mdi-action-shop-two"></i> 月ごとの予算</a>
+					</li>
+					<li class='divider detail_menu_li'></li>
+					
+					<li class='dropdown-header'>入力に便利</li>
+					<li><a href='https://zaim.net/online_accounts'><i class='mdi-action-account-circle'></i> 金融機関と連携</a></li>
+					<li class="easy_menu_li"><a href='https://zaim.net/repeats'><i class='mdi-action-cached'></i> 繰り返し入力</a></li>
+										<li><a href='https://content.zaim.net/operations/scansnap'><i class='mdi-maps-local-print-shop'></i> ScanSnap 連携</a></li>
+										<li class='divider'></li>
+					
+					<li class='dropdown-header'>分析に便利</li>
+					<li><a href='https://content.zaim.net/home/notifications/edit'><i class='mdi-social-notifications-on'></i> 通知</a></li>
+										<li><a href='https://content.zaim.net/home/money'><i class='mdi-file-file-download'></i> ファイル入出力</a></li>
+										<li><a href='https://auth.zaim.net/home/applications'><i class='mdi-social-share'></i> サービス連携</a></li>
+					<li class='divider'></li>
+					
+					<li class='dropdown-header detail_menu_li'>繰り返し入力</li>
+					<li class='detail_menu_li'><a href='https://zaim.net/repeats?toggle=payment'><i class='mdi-action-account-balance-wallet'></i> 支出</a></li>
+					<li class='detail_menu_li'><a href='https://zaim.net/repeats?toggle=income'><i class='mdi-action-wallet-giftcard'></i> 収入</a></li>
+					<li class='detail_menu_li'><a href='https://zaim.net/repeats?toggle=transfer'><i class='mdi-action-credit-card'></i> 振替</a></li>
+					<li class='detail_menu_li divider'></li>
+
+					<li class='dropdown-header'>アカウント設定</li>
+					<li><a href='https://zaim.net/user/profile'><i class='mdi-action-account-circle'></i> プロフィール</a></li>
+										<li><a href='https://zaim.net/user/premium'><i class='mdi-action-stars'></i> プレミアム会員のご紹介</a></li>
+										<li><a href='https://zaim.net/user/email'><i class='mdi-action-lock'></i> ログイン関連</a></li>
+					<li class='divider'></li>
+					
+					<li><a href='https://auth.zaim.net/users/logout'>ログアウト</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+	<div class='container'>
+				<div class='col-lg-12 breadcrumb-wrapper'>
+			<ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<li><a href="https://zaim.net/home" itemprop="url"><span itemprop="title">HOME</span></a></li>
+<li><a href="/" itemprop="url"><span itemprop="title">アカウント情報</span></a></li><li class="active">ログイン</li></ul>
+		</div>
+				<div class='row login-container'>
+						<div class="container"><div class="row"><div class="col-lg-12"><div class="main-content main-bg-index"><div class="page-header"><h2>認証が完了</h2></div><code>iM2Nvl03yD6TK1v7awSj57fN7TEUFh2vhQsqPiCEG2ybeEjHxyiRhDL6Ij5FvTrvQw</code><div class="description"><p>画面を切替中です。少しお待ちください…</p></div><script type="text/javascript">
+setTimeout(function(){ url = "https://zaim.net/user_session/callback?oauth_token=XHjcZjpbTdzb0Au1k4DFS50yV25eWvkah4NzLpyT9wpuTHD43PeEQYvl7Y1uyBfDeppa64&oauth_verifier=iM2Nvl03yD6TK1v7awSj57fN7TEUFh2vhQsqPiCEG2ybeEjHxyiRhDL6Ij5FvTrvQw"; }, 500);
+</script>
+</div></div></div></div>		</div>
+	</div>
+	<script type='text/javascript' src='/js/jquery-1.11.3.min.js'></script>
+	<script type='text/javascript' src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+	<script type='text/javascript' src='/js/ripples.min.js'></script>
+	<script type='text/javascript' src='/js/material.min.js'></script>
+	<script type="text/javascript" src="/js/footer.min.js"></script>	<script>
+		$(function() { $.material.init(); });
+	</script>
+<footer>
+	<div class="col-lg-4 col-md-4 col-sm-4">
+		<div classs="footer-header">企業関連情報</div>
+		<ul>
+		<li><a href="https://zaim.co.jp/" target="_blank">運営会社</a></li>
+		<li><a href="https://content.zaim.net/legal/tos">利用規約</a></li>
+		<li><a href="https://content.zaim.net/legal/privacy">プライバシーポリシー</a></li>
+		<li><a href="https://content.zaim.net/legal/commercial">特定商取引に基づく表記</a></li>
+		<li><a href="https://content.zaim.net/legal/api">銀行法に基づく銀行との契約内容</a></li>
+		<li><a href="https://content.zaim.net/legal/security">情報セキュリティ方針</a></li>
+		</ul>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4">
+		<div classs="footer-header">サービス関連情報</div>
+		<ul>
+		<li><a href="https://content.zaim.net/manuals">使い方</a></li>
+		<li><a href="https://content.zaim.net/questions">よくある質問</a></li>
+		<li><a href="https://content.zaim.net/contacts/add">お問い合わせ</a></li>
+		<li><a href="http://goo.gl/Ok9aqU" target="_blank">iPhone, iPad 版</a></li>
+		<li><a href="https://goo.gl/3I3Mxm" target="_blank">Android 版</a></li>
+		<li><a href="https://dev.zaim.net" target="_blank">開発者向け API のご紹介</a></li>
+		</ul>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4">
+	  <aside class="pull-right">
+		<iframe style="border:none; overflow:hidden; width:100px; height:20px; color:#FFF" src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FZaim%2F100616993359397&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font&amp;height=20"></iframe>
+				<p>&copy; Zaim Inc. All Rights Reserved.</p>
+	  </aside>
+	</div>
+</footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22738782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-22738782-3');
+</script>
+</body>
+</html>
