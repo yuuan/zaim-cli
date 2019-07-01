@@ -30,6 +30,12 @@ ZAIM_AUTH_PASSWORD=p@ssword!
 $ php zaim-cli money:get
 ```
 
+または
+
+```sh
+$ php zaim-cli money:get --month=201906
+```
+
 ## テスト
 
 ```sh
