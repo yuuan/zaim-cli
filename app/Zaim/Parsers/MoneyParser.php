@@ -137,7 +137,7 @@ class MoneyParser extends Parser
      */
     private function parsePrice(string $price): int
     {
-        if (preg_match('/¥([0-9,]+)/', $price, $matches) !== 1) {
+        if (preg_match('/¥([0-9,\-]+)/', $price, $matches) !== 1) {
             throw new ParseException('Could not parse the price.');
         }
 
